@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="stylesheet" href="./static/lib/skeleton/normalize.css">
+    <link rel="stylesheet" href="./static/lib/skeleton/skeleton.css">
+
+</head>
+<body>
+    <div class="container">
+        <ul class="navigation">
+            <li class="navigation-item">
+                <a href="/">Start Page</a>
+            </li>
+            <li class="navigation-item">
+                <a href="/test">Test Page</a>
+            </li>
+            <li class="navigation-item">
+                <a href="/currency">Currency Page</a>
+            </li>
+        </ul>
+        <div style="clear:both;">&nbsp;</div>
+        <br/>
+        {% block content %}{% endblock %}
+    </div>
+
+</body>
+</html>
